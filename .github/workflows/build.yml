@@ -1,0 +1,29 @@
+name: Build Geode Mod
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - os: windows-latest
+          - os: android-armv7
+          - os: android-arm64
+
+    runs-on: ${{ matrix.config.os }}
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Build Mod
+        uses: geode-sdk/build-geode-mod@main
+        with:
+          sdk: v3
+          
