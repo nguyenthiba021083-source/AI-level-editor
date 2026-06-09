@@ -4,7 +4,6 @@ project(AILevelEditor)
 
 include(FetchContent)
 
-# GitHub tự động tải cấu hình Geode về máy chủ
 FetchContent_Declare(
     Geode
     GIT_REPOSITORY https://github.com
@@ -12,7 +11,6 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(Geode)
 
-# Thiết lập mod
 setup_geode_mod(com.myleveleditor.ai)
 
 add_geode_mod(
