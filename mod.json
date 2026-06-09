@@ -1,0 +1,15 @@
+{
+    "geode": "3.3.0",
+    "id": "com.myleveleditor.ai",
+    "version": "1.0.0",
+    "name": "AI Level Editor",
+    "developer": "Sang Tao Vien",
+    "description": "Tu dong phan tich BPM va dung layout, hieu ung qua tri tue nhan tao.",
+    "dependencies": [
+        {
+            "id": "geode.loader",
+            "version": "v3.3.0",
+            "importance": "required"
+        }
+    ]
+}
