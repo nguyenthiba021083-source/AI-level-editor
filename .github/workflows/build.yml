@@ -22,8 +22,9 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Setup Geode CLI
+        uses: geode-sdk/actions/setup@main
+
       - name: Build Mod
-        uses: geode-sdk/build-geode-mod@main
-        with:
-          sdk: nightly
-          
+        uses: geode-sdk/actions/build@main
+        
